@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Shadow generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <div id="preview"></div>
+        </div>
+        <div class="settings">
+            <div class="range-wrapper">
+                <label for="x-shadow-range">Horizontal Shadow :</label>
+                <input type="range" id="x-shadow-range" min="-100" max="100" value="-6">
+            </div>
+            <div class="range-wrapper">
+                <label for="y-shadow-range">Vertical Shadow :</label>
+                <input type="range" id="y-shadow-range" min="-100" max="100" value="-6">
+            </div>
+            <div class="range-wrapper">
+                <label for="blur-radius-range">Blur Radius :</label>
+                <input type="range" id="blur-radius-range" min="0" max="100" value="30">
+            </div>
+            <div class="range-wrapper">
+                <label for="spread-radius-range">Spread Radius :</label>
+                <input type="range" id="spread-radius-range" min="-50" max="50" value="6">
+            </div>
+            <div class="range-wrapper">
+                <label for="border-radius-range">Border Radius :</label>
+                <input type="range" id="border-radius-range" min="0" max="100" step="1" value="6">
+            </div>
+            <div class="range-wrapper">
+                <label for="shadow-opacity-range">Shadow Opacity :</label>
+                <input type="range" id="shadow-opacity-range" min="0" max="1" step="0.1" value="0.5">
+            </div>
+
+            <div class="number-wrapper">
+                <label for="x-shadow-number">Horizontal Shadow :</label>
+                <input type="number" id="x-shadow-number" min="-100" max="100" value="-6">
+            </div>
+            <div class="number-wrapper">
+                <label for="y-shadow-number">Vertical Shadow :</label>
+                <input type="number" id="y-shadow-number" min="-100" max="100" value="-6">
+            </div>
+            <div class="number-wrapper">
+                <label for="blur-radius-number">Blur Radius :</label>
+                <input type="number" id="blur-radius-number" min="0" max="100" value="30">
+            </div>
+            <div class="number-wrapper">
+                <label for="spread-radius-number">Spread Radius :</label>
+                <input type="number" id="spread-radius-number" min="-50" max="50" value="6">
+            </div>
+            <div class="number-wrapper">
+                <label for="border-radius-number">Border Radius :</label>
+                <input type="number" id="border-radius-number" min="0" max="100" step="1" value="6">
+            </div>
+            <div class="number-wrapper">
+                <label for="shadow-opacity-number">Shadow Opacity :</label>
+                <input type="number" id="shadow-opacity-number" min="0" max="1" step="0.1" value="0.5">
+            </div>
+
+            <div class="color-wrapper">
+                <label for="item-color">Item Color :</label>
+                <input type="color" id="item-color">
+            </div>
+
+            <div class="color-wrapper">
+                <label for="shadow-color">Shadow Color :</label>
+                <input type="color" id="shadow-color">
+            </div>
+        </div>
+
+        <button id="input-style" onclick="toggleInputStyle()">Change input style</button>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
